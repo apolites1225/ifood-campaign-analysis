@@ -51,17 +51,21 @@ Three material findings emerged:
 ## Key Findings
 
 **Campaign Performance**
+
 Campaign 6 was the clear winner with a 15.4% acceptance rate — more than double Campaign 4 (7.7%) and nearly 12x Campaign 2 (1.3%). The overall average across all campaigns was 7.6%.
 
 ![Acceptance Rate by Campaign](AcceptanceRateChart.png)
 
 **Acceptor Spend Profile**
+
 Customers who accepted any campaign averaged $932 in total spend vs. $564 for all customers — a 65% premium. This confirms campaigns are reaching and activating high-value segments rather than low-value ones.
 
 **Income as the Primary Spend Driver**
+
 The $75K+ income group (16% of customers) averaged $1,373 in total spend — nearly double the $50K–$75K group ($783) and 25x the sub-$25K group ($54). This segment also accepted Campaign 5 at 37.6%, the highest rate of any income/campaign combination.
 
 **Children at Home Suppresses Spend**
+
 Customers with no children averaged $1,056 vs. $433 for one-child and $223 for two-child households — a 4.7x difference between child-free and two-child customers.
 
 
@@ -69,9 +73,11 @@ Customers with no children averaged $1,056 vs. $433 for one-child and $223 for t
 
 
 **Product Mix Concentration**
+
 Wine (54.4% of avg spend, $306) and meat (29.5%, $166) together account for 83.9% of all customer spending, representing the primary levers for revenue-focused targeting.
 
 **Age: An Underutilized Segment**
+
 The 66+ age group showed the highest average spend ($699) and strong campaign acceptance (30%), but is likely underrepresented in campaign targeting.
 
 ---
