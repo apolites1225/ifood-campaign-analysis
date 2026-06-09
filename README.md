@@ -1,5 +1,7 @@
 # iFood — Marketing Campaign Performance Analysis
 
+![Dashboard Demo](dashboard_demo.gif)
+
 ## Executive Summary
 
 This project analyzes marketing campaign performance across 2,021 iFood customers, using Excel to identify which customer segments respond best to campaigns, what drives total spend, and how future campaigns should be targeted for maximum ROI.
