@@ -51,8 +51,12 @@ Three material findings emerged:
 **Campaign Performance**
 Campaign 6 was the clear winner with a 15.4% acceptance rate — more than double Campaign 4 (7.7%) and nearly 12x Campaign 2 (1.3%). The overall average across all campaigns was 7.6%.
 
+![Acceptance Rate by Campaign](AcceptanceRateChart.png)
+
 **Acceptor Spend Profile**
 Customers who accepted any campaign averaged $932 in total spend vs. $564 for all customers — a 65% premium. This confirms campaigns are reaching and activating high-value segments rather than low-value ones.
+
+![Average Spend by Household Composition](Average_Spend_Household_Comp.png)
 
 **Income as the Primary Spend Driver**
 The $75K+ income group (16% of customers) averaged $1,373 in total spend — nearly double the $50K–$75K group ($783) and 25x the sub-$25K group ($54). This segment also accepted Campaign 5 at 37.6%, the highest rate of any income/campaign combination.
