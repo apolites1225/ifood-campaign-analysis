@@ -84,14 +84,12 @@ The 66+ age group showed the highest average spend ($699) and strong campaign ac
 
 ## Key Business Recommendations
 
-| Priority | Recommendation |
-|---|---|
-| 🎯 Target high-LTV segments | Focus premium campaigns on $75K+ income, child-free customers — highest spend and campaign responsiveness |
-| 📦 Lead with wine and meat | These two categories drive 84% of wallet share; use them as primary campaign hooks |
-| 📈 Scale Campaign 6 for volume | 15.4% acceptance rate — replicate its structure across the broader customer base |
-| 💎 Use Campaign 5 for $75K+ targeting | 37.6% acceptance among the highest-LTV segment; optimal for high-margin acquisition |
-| 👴 Activate the 66+ segment | Highest avg spend ($699) and 30% campaign acceptance — significantly underutilized |
-| ❌ Retire Campaign 2's approach | 1.3% acceptance is not economically viable; reallocate budget to Campaigns 5 and 6 |
+- **Target high-LTV segments**: Focus premium campaigns on $75K+ income, child-free customers — highest spend and campaign responsiveness
+- **Lead with wine and meat**: These two categories drive 84% of wallet share; use them as primary campaign hooks
+- **Scale Campaign 6 for volume**: 15.4% acceptance rate — replicate its structure across the broader customer base
+- **Use Campaign 5 for $75K+ targeting**: 37.6% acceptance among the highest-LTV segment; optimal for high-margin acquisition
+- **Activate the 66+ segment** — Highest avg spend ($699) and 30% campaign acceptance — significantly underutilized
+- **Retire Campaign 2's approach**: 1.3% acceptance is not economically viable; reallocate budget to Campaigns 5 and 6
 
 ---
 
