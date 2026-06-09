@@ -1,129 +1,120 @@
-# iFood Marketing Campaign Analysis
-**Excel-based customer segmentation and campaign performance study**
+# iFood — Marketing Campaign Performance Analysis
 
-![Dashboard Demo](dashboard_demo.gif)
+## Executive Summary
 
----
+This project analyzes marketing campaign performance across 2,021 iFood customers, using Excel to identify which customer segments respond best to campaigns, what drives total spend, and how future campaigns should be targeted for maximum ROI.
 
-## Project Overview
+Three material findings emerged:
 
-This project analyzes marketing campaign performance across a dataset of 2,021 iFood customers. The goal was to identify which customer segments respond best to campaigns, what drives total spend, and how future campaigns should be targeted for maximum impact.
-
-**Tools used:** Microsoft Excel (Power Query, Power Pivot, DAX, VBA, PivotTables, Slicers, Charts, Conditional Formatting)
-
----
-
-## The Business Questions
-
-- Which of the 6 campaigns performed best, and why?
-- What customer profile is most likely to accept a campaign?
-- What drives total customer spend?
-- How should future campaigns be targeted?
+- Campaign 6 achieved a 15.4% acceptance rate — more than double the next best campaign (7.7%) and nearly 12x Campaign 2 (1.3%).
+- Campaign acceptors spend significantly more: $932 average vs. $564 for all customers — a 65% difference, indicating campaigns are reaching high-value segments.
+- Income is the strongest spend driver: the $75K+ group averaged $1,373 in total spend, 25x the sub-$25K group — and showed the highest campaign responsiveness.
 
 ---
 
-## Dashboard
+## Business Questions
 
-The interactive dashboard includes:
+1. Which of the 6 campaigns performed best, and why?
+2. What customer profile is most likely to accept a campaign offer?
+3. What demographic and behavioral factors drive total customer spend?
+4. How should future campaigns be targeted to maximize acceptance and revenue impact?
+5. Which campaigns should be scaled, and which should be retired?
 
-| Component | Description |
+---
+
+## Data Sources
+
+| Dataset | Description |
 |---|---|
-| **KPI 1** | Total Customers |
-| **KPI 2** | Acceptance Rate |
-| **KPI 3** | Average Spend (all customers) |
-| **KPI 4** | Acceptor Avg Spend (campaign acceptors only) |
-| **KPI 5** | Top Campaign Rate |
-| **Chart 1** | Acceptance Rate by Campaign |
-| **Chart 2** | Average Spend by Category |
-| **Slicers** | Filter by Income Group, Age Group, Children at Home, Education |
-
-All KPIs and charts update dynamically based on slicer selection.
+| Customer records | 2,021 rows after deduplication; 38 columns |
+| Demographics | Age, income, marital status, education, household composition |
+| Spend | Total spend + breakdown across 6 product categories (wines, fruits, meat, fish, sweets, gold) |
+| Channels | Web, catalog, and in-store purchase counts; web visits per month |
+| Campaigns | Binary acceptance flags for Campaigns 1–6 |
+| Engagement | Days since last purchase (recency), customer tenure, complaint flag |
 
 ---
 
-## Workbook Structure
+## Tools & Skills Used
 
-| Sheet | Purpose |
-|---|---|
-| `Main` | Cleaned dataset — 2,021 rows, 38 columns including demographics, spend by category, channel usage, and campaign responses |
-| `Accepted Customer Profile` | PivotTable summarizing spend profile and acceptance rates for customers who accepted each campaign |
-| `Calculations` | Named cells powering KPI cards on the dashboard |
-| `Dashboard` | Interactive visual layer with charts, KPIs, and slicers |
+- **Excel (Power Query):** Data transformation, cleaning, and deduplication
+- **Excel (Power Pivot):** Data modeling with unpivoted campaign structure
+- **DAX:** AVERAGEX and DISTINCTCOUNT measures for per-customer averages across unpivoted data
+- **VBA:** Automated filter reset button
+- **PivotTables & Slicers:** Cross-filtering across income, age, household, and education dimensions
+- **Conditional Formatting:** Performance outlier highlighting
 
 ---
 
 ## Key Findings
 
-**1. Campaign 6 was the clear winner**
-Campaign 6 achieved a 15.4% acceptance rate — more than double the next best campaign (7.7%). The overall average across all campaigns was 7.6%.
+**Campaign Performance**
+Campaign 6 was the clear winner with a 15.4% acceptance rate — more than double Campaign 4 (7.7%) and nearly 12x Campaign 2 (1.3%). The overall average across all campaigns was 7.6%.
 
-![Acceptance Rate Bar Chart](AcceptanceRateChart.png)
+**Acceptor Spend Profile**
+Customers who accepted any campaign averaged $932 in total spend vs. $564 for all customers — a 65% premium. This confirms campaigns are reaching and activating high-value segments rather than low-value ones.
 
-**2. Campaign acceptors spend significantly more**
-Customers who accepted any campaign averaged $932 in total spend vs. $564 for all customers — a 65% difference.
+**Income as the Primary Spend Driver**
+The $75K+ income group (16% of customers) averaged $1,373 in total spend — nearly double the $50K–$75K group ($783) and 25x the sub-$25K group ($54). This segment also accepted Campaign 5 at 37.6%, the highest rate of any income/campaign combination.
 
-**3. Income is the strongest spend driver**
-The $75K+ income group (16% of customers) averaged $1,373 in total spend — nearly double the $50K–$75K group ($783) and 25x the sub-$25K group ($54).
+**Children at Home Suppresses Spend**
+Customers with no children averaged $1,056 vs. $433 for one-child and $223 for two-child households — a 4.7x difference between child-free and two-child customers.
 
-**4. $75K+ customers are the most campaign-responsive**
-This segment accepted Campaign 5 at 37.6% — the highest rate of any income/campaign combination. Campaign 6 was the top performer across all other income groups at 11–12%.
+**Product Mix Concentration**
+Wine (54.4% of avg spend, $306) and meat (29.5%, $166) together account for 83.9% of all customer spending, representing the primary levers for revenue-focused targeting.
 
-**5. Children at home significantly reduce spend**
-Customers with no children or teens at home averaged $1,056 in total spend vs. $433 for those with one and $223 for those with two — a 2.4x difference between child-free and one-child households.
-
-![Average Spend by Household Composition](Average_Spend_Household_Comp.png)
-
-**6. Wine and meat dominate the product mix**
-Wines represent 54.4% of average spend ($306), meat products 29.5% ($166). Together they account for 83.9% of all customer spending.
-
-**7. Campaign 2 significantly underperformed**
-At 1.3% acceptance (26 customers), Campaign 2 was nearly an order of magnitude less effective than Campaign 6.
+**Age: An Underutilized Segment**
+The 66+ age group showed the highest average spend ($699) and strong campaign acceptance (30%), but is likely underrepresented in campaign targeting.
 
 ---
 
-## Data & Methodology
-
-**Dataset:** 2,021 customer records (after deduplication) with the following variable groups:
-- **Demographics:** Age, income, marital status, education, household composition
-- **Spend:** Total spend + breakdown across 6 product categories (wines, fruits, meat, fish, sweets, gold)
-- **Channels:** Web, catalog, and in-store purchase counts; web visits per month
-- **Campaigns:** Binary acceptance flags for Campaigns 1–6
-- **Engagement:** Days since last purchase (recency), days as a customer, complaint flag
-
-**Excel techniques applied:**
-- Power Query for data transformation, cleaning, and deduplication
-- Power Pivot for data modeling with unpivoted campaign structure
-- DAX measures using AVERAGEX and DISTINCTCOUNT to correctly calculate per-customer averages across unpivoted data
-- VBA for automated filter reset functionality
-- Slicers connected to multiple PivotTables for cross-filtering
-- Conditional formatting to highlight performance outliers
-
----
-
-## How to Use
-
-1. Download `iFood_campaign_analysis.xlsm`
-2. Enable macros if prompted
-3. Navigate to the **Dashboard** tab
-4. Use the slicers to filter by Income Group, Age Group, Children at Home, or Education
-5. All KPIs and charts update dynamically based on slicer selection
-6. Click **Reset Filters** to return to the full dataset view
-
----
-
-## Business Recommendations
+## Key Business Recommendations
 
 | Priority | Recommendation |
 |---|---|
-| 🎯 Target | $75K+ income, child-free customers for premium campaigns |
-| 📦 Lead with | Wine and meat — they represent 84% of wallet share |
-| 📈 Scale | Campaign 6's structure for volume (15.4% acceptance); Campaign 5's for high-LTV $75K+ targeting (37.6%) |
-| ❌ Retire | Campaign 2's approach — 1.3% acceptance is not scalable |
-| 👴 Don't ignore | 66+ age group — highest avg spend ($699) and campaign acceptance (30%) |
+| 🎯 Target high-LTV segments | Focus premium campaigns on $75K+ income, child-free customers — highest spend and campaign responsiveness |
+| 📦 Lead with wine and meat | These two categories drive 84% of wallet share; use them as primary campaign hooks |
+| 📈 Scale Campaign 6 for volume | 15.4% acceptance rate — replicate its structure across the broader customer base |
+| 💎 Use Campaign 5 for $75K+ targeting | 37.6% acceptance among the highest-LTV segment; optimal for high-margin acquisition |
+| 👴 Activate the 66+ segment | Highest avg spend ($699) and 30% campaign acceptance — significantly underutilized |
+| ❌ Retire Campaign 2's approach | 1.3% acceptance is not economically viable; reallocate budget to Campaigns 5 and 6 |
 
 ---
 
-## About
+## Data Cleaning, Assumptions & Limitations
 
-This case study was completed as part of a self-directed data analytics portfolio.
-Feel free to connect on [LinkedIn](https://linkedin.com/in/aristotlepolites/) if you have questions or feedback.
+- Dataset contains 2,021 customer records after deduplication; original source includes duplicate entries removed via Power Query.
+- Campaign acceptance is binary (0/1); analysis does not account for multiple campaign acceptances per customer beyond the provided flags.
+- Spend figures represent total historical spend across all categories and do not reflect campaign-period spend specifically.
+- Income brackets are self-reported and may not reflect current financial status.
+- Analysis does not include cost-per-campaign or margin data — all ROI directional conclusions are based on spend differentials, not net profitability.
+
+---
+
+## Project Structure
+
+```
+ifood-campaign-analysis/
+├── ifood_campaign_analysis.xlsm   # Full interactive Excel workbook (enable macros)
+├── dashboard_demo.gif             # Animated dashboard walkthrough
+├── dashboard_preview_3.png        # Dashboard screenshot
+├── AcceptanceRateChart.png        # Campaign acceptance rate chart
+├── Average_Spend_Household_Comp.png  # Spend by household composition chart
+└── README.md
+```
+
+### How to Use the Workbook
+
+1. Download `ifood_campaign_analysis.xlsm`
+2. Enable macros if prompted
+3. Navigate to the **Dashboard** tab
+4. Use slicers to filter by Income Group, Age Group, Children at Home, or Education
+5. Click **Reset Filters** to return to full dataset view
+
+### Dashboard Preview
+
+![Dashboard Preview](dashboard_preview_3.png)
+
+![Acceptance Rate by Campaign](AcceptanceRateChart.png)
+
+![Average Spend by Household Composition](Average_Spend_Household_Comp.png)
