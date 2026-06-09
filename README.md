@@ -116,11 +116,3 @@ ifood-campaign-analysis/
 3. Navigate to the **Dashboard** tab
 4. Use slicers to filter by Income Group, Age Group, Children at Home, or Education
 5. Click **Reset Filters** to return to full dataset view
-
-### Dashboard Preview
-
-![Dashboard Preview](dashboard_preview_3.png)
-
-![Acceptance Rate by Campaign](AcceptanceRateChart.png)
-
-![Average Spend by Household Composition](Average_Spend_Household_Comp.png)
